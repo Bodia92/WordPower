@@ -15,6 +15,32 @@
 
 <body>
 
+  <!-- ═══════════════ SVG ICON SPRITE (стихії) ═══════════════ -->
+  <svg class="svg-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="ico-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+      </symbol>
+      <symbol id="ico-water" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
+      </symbol>
+      <symbol id="ico-air" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+        <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+        <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+      </symbol>
+      <symbol id="ico-earth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+      </symbol>
+    </defs>
+  </svg>
+
   <!-- ═══════════════ HERO ═══════════════ -->
   <section class="hero">
     <canvas class="hero__canvas" id="heroCanvas"></canvas>
@@ -192,11 +218,11 @@
 
       <div class="manifesto__body reveal reveal--up">
         <p>Все, що сьогодні є у вашому житті, колись стало вашим <em>внутрішнім діалогом</em>.</p>
-        <p>І якщо змінити цей діалог — змінюється траєкторія майбутнього.</p>
+        <p>І якщо змінити цей діалог — змінюється <span class="kw">ТРАЄКТОРІЯ МАЙБУТНЬОГО</span>.</p>
       </div>
 
       <div class="manifesto__themes reveal reveal--up">
-        <p class="manifesto__themes-intro">Тут про розуміння механізмів, через які ми самі впливаємо на свою реальність:
+        <p class="manifesto__themes-intro">Тут про розуміння механізмів, через які ми самі впливаємо на свою <span class="kw">РЕАЛЬНІСТЬ</span>:
         </p>
         <ul class="manifesto__theme-list">
           <li>ПРО ЗАКОНИ УВАГИ</li>
@@ -212,6 +238,47 @@
           <p>ТУТ МИ ПРАЦЮЄМО НАД ПРИЧИНОЮ, А НЕ НАД НАСЛІДКАМИ!</p>
           <span class="manifesto__red-deco">✦</span>
         </div>
+      </div>
+
+    </div>
+    <div class="section-fade-bottom"></div>
+  </section>
+
+  <!-- ═══════════════ SHOWCASE ═══════════════ -->
+  <section class="showcase">
+    <div class="section-fade-top"></div>
+    <div class="showcase__glow" aria-hidden="true"></div>
+    <div class="container">
+
+      <div class="showcase__intro reveal reveal--up">
+        <p class="showcase__eyebrow">✦ &nbsp; ТВОЯ РЕАЛЬНІСТЬ &nbsp; ✦</p>
+        <p class="showcase__lead">
+          Кожне <span class="kw">СЛОВО</span>, яке ти промовляєш, стає
+          <span class="kw kw--strong">СИЛОЮ</span>, що творить твій світ.
+        </p>
+      </div>
+
+      <div class="showcase__frame reveal reveal--scale">
+        <div class="showcase__corner showcase__corner--tl" aria-hidden="true"></div>
+        <div class="showcase__corner showcase__corner--tr" aria-hidden="true"></div>
+        <div class="showcase__corner showcase__corner--bl" aria-hidden="true"></div>
+        <div class="showcase__corner showcase__corner--br" aria-hidden="true"></div>
+        <div class="showcase__frame-inner">
+          <img class="showcase__img" src="img/img.jpg"
+            alt="Жінка, з вуст якої словами світла ллються Любов, Віра, Добро, Світло — Сила Слова" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="showcase__tags reveal reveal--up">
+        <span class="showcase__tag">Любов</span>
+        <span class="showcase__tag">Віра</span>
+        <span class="showcase__tag">Добро</span>
+        <span class="showcase__tag">Світло</span>
+        <span class="showcase__tag">Гармонія</span>
+        <span class="showcase__tag">Натхнення</span>
+        <span class="showcase__tag">Мудрість</span>
+        <span class="showcase__tag">Щастя</span>
+        <span class="showcase__tag">Краса</span>
       </div>
 
     </div>
@@ -234,7 +301,7 @@
           <div class="forwhom__card-corner forwhom__card-corner--bl"></div>
           <div class="forwhom__card-corner forwhom__card-corner--br"></div>
           <span class="forwhom__quote">&ldquo;</span>
-          <p>Я готова до наступного рівня.</p>
+          <p>Я готова до <span class="kw">НАСТУПНОГО РІВНЯ</span>.</p>
         </div>
         <div class="forwhom__card reveal reveal--up">
           <div class="forwhom__card-corner forwhom__card-corner--tl"></div>
@@ -248,7 +315,7 @@
           <div class="forwhom__card-corner forwhom__card-corner--tr"></div>
           <div class="forwhom__card-corner forwhom__card-corner--bl"></div>
           <div class="forwhom__card-corner forwhom__card-corner--br"></div>
-          <p>Для тих, хто розуміє, що справжня сила народжується не в діях.</p>
+          <p>Для тих, хто розуміє, що <span class="kw">СПРАВЖНЯ СИЛА</span> народжується не в діях.</p>
           <p class="forwhom__card-accent">Вона народжується в стані.</p>
         </div>
       </div>
@@ -276,9 +343,26 @@
   <!-- ═══════════════ LEARN ═══════════════ -->
   <section class="learn">
     <div class="section-fade-top"></div>
+    <div class="decor-glyphs" aria-hidden="true">
+      <svg class="decor-glyph decor-glyph--1"><use href="#ico-fire" /></svg>
+      <svg class="decor-glyph decor-glyph--2"><use href="#ico-water" /></svg>
+      <svg class="decor-glyph decor-glyph--3"><use href="#ico-air" /></svg>
+      <svg class="decor-glyph decor-glyph--4"><use href="#ico-earth" /></svg>
+    </div>
     <div class="container">
-      <h2 class="section-title reveal reveal--up">Ви навчитеся керувати<br><em>силою слова</em></h2>
+      <h2 class="section-title section-title--power reveal reveal--up">
+        <span class="section-title__pre">Ви навчитеся керувати</span>
+        <span class="power-word">Силою&nbsp;Слова</span>
+      </h2>
       <p class="learn__subtitle reveal reveal--up">Чітко зрозумієте:</p>
+
+      <div class="ornament ornament--tight reveal reveal--up" aria-hidden="true">
+        <span class="ornament__line"></span>
+        <span class="ornament__gem"></span>
+        <span class="ornament__glyph">✦</span>
+        <span class="ornament__gem"></span>
+        <span class="ornament__line"></span>
+      </div>
 
       <div class="learn__grid">
         <div class="learn__item reveal reveal--left">
@@ -287,7 +371,7 @@
         </div>
         <div class="learn__item reveal reveal--right">
           <span class="learn__marker learn__marker--gold">✦</span>
-          <p>Чому хтось ніби притягує можливості, а хтось постійно стикається з хаосом, неприємностями і опором.</p>
+          <p>Чому хтось ніби <span class="kw">ПРИТЯГУЄ МОЖЛИВОСТІ</span>, а хтось постійно стикається з хаосом, неприємностями і опором.</p>
         </div>
         <div class="learn__item reveal reveal--left">
           <span class="learn__marker learn__marker--red">‼</span>
@@ -303,7 +387,7 @@
         </div>
         <div class="learn__item reveal reveal--right">
           <span class="learn__marker learn__marker--red">‼</span>
-          <p>Чому маніфестація не працює у більшості людей.</p>
+          <p>Чому <span class="kw">МАНІФЕСТАЦІЯ</span> не працює у більшості людей.</p>
         </div>
         <div class="learn__item reveal reveal--left">
           <span class="learn__marker learn__marker--red">‼</span>
@@ -311,8 +395,16 @@
         </div>
         <div class="learn__item reveal reveal--right">
           <span class="learn__marker learn__marker--red">‼</span>
-          <p>Як припинити віддавати свою енергію через слова страху, сумнівів і скарг.</p>
+          <p>Як припинити віддавати свою <span class="kw">ЕНЕРГІЮ</span> через слова страху, сумнівів і скарг.</p>
         </div>
+      </div>
+
+      <div class="ornament reveal reveal--up" aria-hidden="true">
+        <span class="ornament__line"></span>
+        <span class="ornament__gem"></span>
+        <span class="ornament__glyph">◈</span>
+        <span class="ornament__gem"></span>
+        <span class="ornament__line"></span>
       </div>
 
       <div class="learn__banner reveal reveal--up">
@@ -325,6 +417,43 @@
           <span></span><span></span><span></span>
         </div>
       </div>
+
+      <!-- Стихії -->
+      <div class="elements reveal reveal--up">
+        <div class="elements__head">
+          <h3 class="elements__title">Чотири <span class="kw">СТИХІЇ</span> сили</h3>
+          <p class="elements__sub">вогонь · вода · повітря · земля</p>
+        </div>
+        <div class="elements__media">
+          <div class="elements__media-inner">
+            <img src="img/img2.jpg"
+              alt="Чотири стихії — вода, вогонь, земля та повітря" loading="lazy" />
+          </div>
+          <span class="elements__media-caption">Вода · Вогонь · Земля · Повітря</span>
+        </div>
+        <div class="elements__grid">
+          <div class="element element--fire">
+            <svg class="element__glyph" aria-hidden="true"><use href="#ico-fire" /></svg>
+            <span class="element__name">Вогонь</span>
+            <span class="element__role">Воля та трансформація</span>
+          </div>
+          <div class="element element--water">
+            <svg class="element__glyph" aria-hidden="true"><use href="#ico-water" /></svg>
+            <span class="element__name">Вода</span>
+            <span class="element__role">Чистка та потік</span>
+          </div>
+          <div class="element element--air">
+            <svg class="element__glyph" aria-hidden="true"><use href="#ico-air" /></svg>
+            <span class="element__name">Повітря</span>
+            <span class="element__role">Слово та намір</span>
+          </div>
+          <div class="element element--earth">
+            <svg class="element__glyph" aria-hidden="true"><use href="#ico-earth" /></svg>
+            <span class="element__name">Земля</span>
+            <span class="element__role">Опора та втілення</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section-fade-bottom"></div>
   </section>
@@ -333,15 +462,28 @@
   <section class="days">
     <div class="section-fade-top"></div>
     <div class="days__bg-glow" aria-hidden="true"></div>
+    <div class="days__bg-medallion" aria-hidden="true">
+      <img src="logo-bg.jpg" alt="" />
+    </div>
     <div class="container">
       <h2 class="section-title reveal reveal--up">Програма<br><em>інтенсиву</em></h2>
+
+      <div class="ornament reveal reveal--up" aria-hidden="true">
+        <span class="ornament__line"></span>
+        <span class="ornament__gem"></span>
+        <span class="ornament__glyph">✦</span>
+        <span class="ornament__gem"></span>
+        <span class="ornament__line"></span>
+      </div>
 
       <div class="days__timeline">
 
         <div class="days__item reveal reveal--left">
+          <svg class="days__glyph" aria-hidden="true"><use href="#ico-air" /></svg>
           <div class="days__num">
             <span class="days__num-label">ДЕНЬ</span>
             <span class="days__num-val">1</span>
+            <span class="days__sigil" aria-hidden="true">◈</span>
           </div>
           <div class="days__content">
             <h3 class="days__title">ПРИХОВАНА ВЛАДА СЛІВ</h3>
@@ -351,7 +493,7 @@
               <li>Програми виживання.</li>
               <li>Обмеження, які маскуються під здоровий глузд.</li>
             </ul>
-            <p class="days__desc">Ви побачите, які саме фрази створюють ваші сьогоднішні результати.</p>
+            <p class="days__desc">Ви побачите, які саме фрази створюють ваші сьогоднішні <span class="kw">РЕЗУЛЬТАТИ</span>.</p>
             <span class="days__live"><span class="days__live-dot"></span> Прямий ефір</span>
           </div>
           <div class="days__card-glow" aria-hidden="true"></div>
@@ -360,13 +502,17 @@
         <div class="days__connector" aria-hidden="true">
           <span class="days__connector-dot"></span>
           <span class="days__connector-line"></span>
+          <span class="days__connector-glyph">✦</span>
+          <span class="days__connector-line"></span>
           <span class="days__connector-dot"></span>
         </div>
 
         <div class="days__item reveal reveal--right">
+          <svg class="days__glyph" aria-hidden="true"><use href="#ico-fire" /></svg>
           <div class="days__num">
             <span class="days__num-label">ДЕНЬ</span>
             <span class="days__num-val">2</span>
+            <span class="days__sigil" aria-hidden="true">⟡</span>
           </div>
           <div class="days__content">
             <h3 class="days__title">МАНІФЕСТАЦІЯ ТА СИЛА НАМІРУ</h3>
@@ -383,22 +529,26 @@
         <div class="days__connector" aria-hidden="true">
           <span class="days__connector-dot"></span>
           <span class="days__connector-line"></span>
+          <span class="days__connector-glyph">✦</span>
+          <span class="days__connector-line"></span>
           <span class="days__connector-dot"></span>
         </div>
 
         <div class="days__item reveal reveal--left">
+          <svg class="days__glyph" aria-hidden="true"><use href="#ico-earth" /></svg>
           <div class="days__num">
             <span class="days__num-label">ДЕНЬ</span>
             <span class="days__num-val">3</span>
+            <span class="days__sigil" aria-hidden="true">◆</span>
           </div>
           <div class="days__content">
             <h3 class="days__title">КОД ТВОРЦЯ РЕАЛЬНОСТІ</h3>
             <ul class="days__list">
               <li>Аскеза на слово.</li>
               <li>Енергетична дисципліна.</li>
-              <li>Слова достатку. Слова сили. Слова проявленості.</li>
-              <li>Створення особистого Маніфесту Нової Реальності!</li>
-              <li>ЧИСТКА, ЗАХИСТ ЧЕРЕЗ СЛОВО І СИЛУ СТИХІЙ!</li>
+              <li>Слова <span class="kw">ДОСТАТКУ</span>. Слова <span class="kw">СИЛИ</span>. Слова <span class="kw">ПРОЯВЛЕНОСТІ</span>.</li>
+              <li>Створення особистого <span class="kw">МАНІФЕСТУ НОВОЇ РЕАЛЬНОСТІ</span>!</li>
+              <li>Чистка, захист через слово і <span class="kw kw--strong">СИЛУ СТИХІЙ</span>!</li>
             </ul>
             <span class="days__live"><span class="days__live-dot"></span> Прямий ефір</span>
           </div>
@@ -419,7 +569,7 @@
       <div class="after__grid">
         <div class="after__item reveal reveal--left">
           <span class="after__num">01</span>
-          <p>Ви більше не зможете говорити про себе так, як раніше.</p>
+          <p>Ви більше не зможете <span class="kw">ГОВОРИТИ ПРО СЕБЕ</span> так, як раніше.</p>
         </div>
         <div class="after__item reveal reveal--right">
           <span class="after__num">02</span>
@@ -427,7 +577,7 @@
         </div>
         <div class="after__item reveal reveal--left">
           <span class="after__num">03</span>
-          <p>Побачите, як самі створювали обмеження.</p>
+          <p>Побачите, як самі <span class="kw">СТВОРЮВАЛИ ОБМЕЖЕННЯ</span>.</p>
         </div>
         <div class="after__item reveal reveal--right">
           <span class="after__num">04</span>
@@ -464,7 +614,7 @@
         <span></span><span>VIP</span><span></span>
       </div>
       <p class="register__body reveal reveal--up">
-        ЯКЩО ВИ ГОТОВІ ПЕРЕЙТИ ВІД НЕСВІДОМОГО СТВОРЕННЯ РЕАЛЬНОСТІ ДО СВІДОМОГО —<br>
+        ЯКЩО ВИ ГОТОВІ ПЕРЕЙТИ ВІД НЕСВІДОМОГО СТВОРЕННЯ РЕАЛЬНОСТІ ДО <span class="kw kw--strong">СВІДОМОГО</span> —<br>
         ЛАСКАВО ПРОШУ!
       </p>
       <div class="register__date reveal reveal--up">
