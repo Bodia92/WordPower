@@ -458,11 +458,11 @@ strong {
 }
 .hero__eyebrow {
     font-family: var(--ff-d);
-    font-size: 0.72rem;
-    letter-spacing: 0.35em;
+    font-size: clamp(0.85rem, 2.4vw, 1rem);
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     animation: fadeSlideDown 0.8s 0.1s ease both;
 }
 .hero__title {
@@ -532,27 +532,27 @@ strong {
 .hero__icons {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: 34px;
     animation: fadeIn 0.8s 1.1s ease both;
 }
 .hero__icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    min-width: 78px;
+    gap: 9px;
+    min-width: 96px;
 }
 .hero__icon-circle {
-    width: 48px;
-    height: 48px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: var(--gold);
     background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
     transition:
@@ -565,55 +565,57 @@ strong {
 }
 .hero__icon-top {
     font-family: var(--ff-d);
-    font-size: 0.5rem;
-    letter-spacing: 0.15em;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
     color: var(--gold);
     text-transform: uppercase;
     font-weight: 600;
 }
 .hero__icon-sub {
-    font-size: 0.58rem;
-    color: var(--grey);
-    letter-spacing: 0.04em;
+    font-size: 0.85rem;
+    color: #b0a890;
+    letter-spacing: 0.02em;
 }
 
 .hero__motto {
     font-family: var(--ff-d);
-    font-size: clamp(0.58rem, 1.6vw, 0.82rem);
-    letter-spacing: 0.2em;
+    font-size: clamp(0.85rem, 2.4vw, 1.05rem);
+    letter-spacing: 0.16em;
     color: var(--white);
     text-transform: uppercase;
-    margin-bottom: 6px;
+    line-height: 1.6;
+    margin-bottom: 8px;
     animation: fadeIn 0.8s 1.3s ease both;
 }
 .hero__motto-script {
     font-family: var(--ff-s);
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1.2rem, 3.6vw, 1.7rem);
     font-style: italic;
     color: var(--gold);
-    margin-bottom: 28px;
+    margin-bottom: 34px;
     animation: fadeIn 0.8s 1.4s ease both;
 }
 
 .hero__meta {
     display: inline-flex;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
     border: 1px solid var(--border);
-    padding: 14px 28px;
+    padding: 16px 34px;
     animation: fadeIn 0.8s 1.5s ease both;
 }
 .hero__date-label {
     font-family: var(--ff-d);
-    font-size: 0.55rem;
-    letter-spacing: 0.2em;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
     color: var(--grey);
     display: block;
+    margin-bottom: 3px;
 }
 .hero__date-val {
     font-family: var(--ff-d);
-    font-size: 0.82rem;
-    letter-spacing: 0.12em;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
     color: var(--gold);
     font-weight: 600;
 }
@@ -1140,7 +1142,7 @@ strong {
     background-image:
         linear-gradient(180deg, var(--bg) 0%, transparent 30%, transparent 70%, var(--bg) 100%),
         radial-gradient(ellipse at 50% 50%, rgba(5, 5, 5, 0.84) 30%, rgba(5, 5, 5, 0.66) 100%),
-        url("img/bg-program.png");
+        url("img/bg-program.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1369,7 +1371,7 @@ strong {
     background-image:
         linear-gradient(180deg, var(--bg) 0%, transparent 22%, transparent 78%, var(--bg) 100%),
         radial-gradient(ellipse at 50% 50%, rgba(6, 6, 6, 0.88) 35%, rgba(6, 6, 6, 0.64) 100%),
-        url("img/bg-aura.png");
+        url("img/bg-aura.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1481,8 +1483,21 @@ strong {
     position: relative;
     padding: 140px 0 120px;
     text-align: center;
-    background: var(--bg);
     overflow: hidden;
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(180deg, var(--bg) 0%, transparent 30%, transparent 65%, var(--bg) 100%),
+        radial-gradient(ellipse at 50% 48%, rgba(6, 6, 6, 0.82) 30%, rgba(6, 6, 6, 0.6) 100%),
+        url("img/bg-portal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (max-width: 991.98px) {
+    .register {
+        background-attachment: scroll;
+    }
 }
 .register__bg-logo {
     position: absolute;
@@ -2170,12 +2185,21 @@ strong {
 }
 @media (max-width: 480px) {
     .hero__icons {
-        gap: 8px;
+        gap: 14px 10px;
+    }
+    .hero__icon-item {
+        min-width: 84px;
     }
     .hero__icon-circle {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
+        width: 54px;
+        height: 54px;
+        font-size: 1.5rem;
+    }
+    .hero__icon-top {
+        font-size: 0.78rem;
+    }
+    .hero__icon-sub {
+        font-size: 0.8rem;
     }
     .days__item {
         grid-template-columns: 48px 1fr;
