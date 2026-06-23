@@ -577,6 +577,62 @@ strong {
     letter-spacing: 0.02em;
 }
 
+/* "ТИ — творець реальності" highlight */
+.hero__you {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto 30px;
+    padding: 13px 32px;
+    border: 1px solid var(--gold);
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.16) 0%, rgba(201, 168, 76, 0.04) 100%);
+    box-shadow:
+        0 0 34px rgba(201, 168, 76, 0.2),
+        inset 0 0 20px rgba(201, 168, 76, 0.05);
+    animation:
+        fadeIn 0.8s 1.2s ease both,
+        youPulse 3.5s 2s ease-in-out infinite;
+}
+@keyframes youPulse {
+    0%,
+    100% {
+        box-shadow:
+            0 0 34px rgba(201, 168, 76, 0.18),
+            inset 0 0 20px rgba(201, 168, 76, 0.05);
+    }
+    50% {
+        box-shadow:
+            0 0 48px rgba(201, 168, 76, 0.4),
+            inset 0 0 24px rgba(201, 168, 76, 0.1);
+    }
+}
+.hero__you-glyph {
+    color: var(--gold);
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.6));
+}
+.hero__you-text {
+    font-family: var(--ff-d);
+    font-size: clamp(0.75rem, 3.4vw, 1.5rem);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+    white-space: nowrap;
+}
+.hero__you-text strong {
+    font-weight: 900;
+    font-size: 1.18em;
+    background: linear-gradient(180deg, #f8e493 0%, #e8c96a 50%, #b8862c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(232, 201, 106, 0.4);
+}
+
 .hero__motto {
     font-family: var(--ff-d);
     font-size: clamp(0.85rem, 2.4vw, 1.05rem);
@@ -633,7 +689,6 @@ strong {
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -844,22 +899,27 @@ strong {
     display: inline-flex;
     align-items: center;
     gap: 20px;
-    border: 1px solid rgba(139, 0, 0, 0.4);
-    padding: 20px 40px;
-    border-radius: 3px;
-    background: rgba(139, 0, 0, 0.07);
+    border: 1px solid rgba(232, 100, 90, 0.55);
+    padding: 22px 44px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.92) 0%, rgba(74, 0, 0, 0.85) 100%);
+    box-shadow:
+        0 10px 40px rgba(139, 0, 0, 0.35),
+        inset 0 0 26px rgba(0, 0, 0, 0.3);
 }
 .manifesto__red-banner-inner p {
     font-family: var(--ff-d);
-    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
     letter-spacing: 0.12em;
-    color: var(--red-lt);
+    color: #ffe7cf;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
 }
 .manifesto__red-deco {
-    color: rgba(139, 0, 0, 0.5);
-    font-size: 0.8rem;
+    color: var(--gold-lt);
+    font-size: 0.95rem;
+    filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.5));
 }
 
 /* ═══════════════ FOR WHOM ═══════════════ */
@@ -2188,18 +2248,28 @@ strong {
         gap: 14px 10px;
     }
     .hero__icon-item {
-        min-width: 84px;
+        min-width: 72px;
+        gap: 4px;
     }
     .hero__icon-circle {
-        width: 54px;
-        height: 54px;
+        width: 48px;
+        height: 48px;
         font-size: 1.5rem;
     }
+
     .hero__icon-top {
         font-size: 0.78rem;
     }
     .hero__icon-sub {
         font-size: 0.8rem;
+    }
+    .hero__you {
+        gap: 10px;
+        padding: 11px 20px;
+        max-width: 100%;
+    }
+    .hero__you-text {
+        white-space: normal;
     }
     .days__item {
         grid-template-columns: 48px 1fr;
