@@ -684,12 +684,21 @@ strong {
 .manifesto {
     position: relative;
     padding: 80px 0;
-    background: linear-gradient(180deg, var(--bg) 0%, #0d0a04 50%, var(--bg) 100%);
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(180deg, var(--bg) 0%, transparent 22%, transparent 78%, var(--bg) 100%),
+        radial-gradient(ellipse at 50% 45%, rgba(6, 6, 6, 0.86) 35%, rgba(6, 6, 6, 0.62) 100%),
+        url("img/bg-aura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media (max-width: 991.98px) {
     .manifesto {
         padding: 40px 0;
+        background-attachment: scroll;
     }
 }
 .manifesto__deco-line {
@@ -1123,15 +1132,41 @@ strong {
 /* ═══════════════ DAYS ═══════════════ */
 .days {
     position: relative;
-    padding: 80px 0;
-    background: var(--bg);
+    padding: 110px 0;
     overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background-color: #050505;
+    background-image:
+        linear-gradient(180deg, var(--bg) 0%, transparent 30%, transparent 70%, var(--bg) 100%),
+        radial-gradient(ellipse at 50% 50%, rgba(5, 5, 5, 0.84) 30%, rgba(5, 5, 5, 0.66) 100%),
+        url("img/bg-program.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media (max-width: 991.98px) {
     .days {
-        padding: 40px 0;
+        padding: 60px 0;
+        background-attachment: scroll;
     }
+}
+
+/* Program emphasis */
+.days__eyebrow {
+    text-align: center;
+    font-family: var(--ff-d);
+    font-size: 1rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+}
+.days__cta {
+    text-align: center;
+    margin-top: 56px;
 }
 .days__bg-glow {
     position: absolute;
@@ -1172,6 +1207,29 @@ strong {
 .days__item:hover {
     border-color: var(--gold);
     box-shadow: 0 0 60px rgba(201, 168, 76, 0.08);
+}
+.days__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--day-accent, var(--gold)) 0%, transparent 92%);
+    opacity: 0.7;
+    z-index: 2;
+}
+.days__item--air {
+    --day-accent: #cfd6dd;
+}
+.days__item--fire {
+    --day-accent: #e8645a;
+}
+.days__item--earth {
+    --day-accent: #8ec96a;
+}
+.days__item {
+    background-color: rgba(15, 15, 15, 0.92);
 }
 .days__card-glow {
     position: absolute;
@@ -1307,12 +1365,21 @@ strong {
 .after {
     position: relative;
     padding: 80px 0;
-    background: linear-gradient(180deg, var(--bg) 0%, #0c0a06 50%, var(--bg) 100%);
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(180deg, var(--bg) 0%, transparent 22%, transparent 78%, var(--bg) 100%),
+        radial-gradient(ellipse at 50% 50%, rgba(6, 6, 6, 0.88) 35%, rgba(6, 6, 6, 0.64) 100%),
+        url("img/bg-aura.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media (max-width: 991.98px) {
     .after {
         padding: 40px 0;
+        background-attachment: scroll;
     }
 }
 .after__grid {
@@ -1961,8 +2028,8 @@ strong {
     right: 18px;
     width: 120px;
     height: 120px;
-    color: var(--gold);
-    opacity: 0.06;
+    color: var(--day-accent, var(--gold));
+    opacity: 0.08;
     pointer-events: none;
     z-index: 0;
     user-select: none;
@@ -1982,7 +2049,7 @@ strong {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    color: var(--gold);
+    color: var(--day-accent, var(--gold));
     background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, transparent 70%);
 }
 .days__connector-glyph {
